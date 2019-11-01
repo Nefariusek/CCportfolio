@@ -1,3 +1,18 @@
+@font-face{
+    font-family: 'Staatliches';
+    src: url(./fonts/Staatliches/Staatliches-Regular.ttf)
+}
+
+@font-face{
+    font-family: 'McLaren';
+    src: url(./fonts/McLaren/McLaren-Regular.ttf)
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
 
 .mybackground{
     background-image: url(./img/zonebg.jpg);
@@ -8,4 +23,91 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
+    z-index: -10;
+}
+
+#banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.welcometext {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    width: auto;
+    max-width: 43%;   
+    padding-top: 1em;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: 'Staatliches';
+}
+
+p{
+    font-family: 'McLaren';
+}
+
+.wrapper{
+    background-color: #F8F8FF;
+    width: 100%;
+}
+
+.flex-content-hobby{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+#myphoto img{
+    width: 100%;
+    object-fit: cover;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+.image img{
+    width: 100%;
+    object-fit: cover;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+
+footer {
+    background-color: rgb(36, 36, 36);
+    margin-top: 1%;
+    width: 100%;
+}
+
+
+
+div.links {
+    width:  100%;
+    text-align: center;   
+}
+
+.links a{
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.links i {
+    font-size: 4em;
+    color: white;
+    
+}
+
+.copyrights {
+    color: grey;
+    text-align: center;
+}
+
+.copyrights p {
+    display: inline-block;
+    margin: 0;
+    font-size: 1em;
 }

@@ -36,13 +36,21 @@
     top: 20%;
     left: 10%;
     width: auto;
-    max-width: 43%;   
+    max-width: 50%;   
     padding-top: 1em;
     text-align: center;
+    font-size: 2em;
 }
 
 h1, h2{
     font-family: 'Staatliches';
+    font-size: 2em;
+}
+
+
+h2{
+    text-align: center;
+    margin: 20px 0px;
 }
 
 p{
@@ -53,6 +61,18 @@ p{
     background-color: #F8F8FF;
     width: 100%;
 }
+.flex-content-aboutme{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.aboutme {
+    position: relative;
+    text-align: center;
+}
 
 .flex-content-hobby{
     display: flex;
@@ -62,28 +82,36 @@ p{
     justify-content: space-evenly;
 }
 
+.hobby {
+    position: relative;
+    text-align: center;
+}
+
 #myphoto img{
+    
     width: 100%;
     object-fit: cover;
     max-width: 500px;
     min-width: 200px;
 }
 
-.image img{
+.hobby .image img{
     width: 100%;
     object-fit: cover;
-    max-width: 500px;
-    min-width: 200px;
+    max-width: 700px;
+    min-width: 100px;
+
 }
 
+.desc{
+    font-size: 1.5em;
+}
 
 footer {
-    background-color: rgb(36, 36, 36);
+    background-color: #242424;
     margin-top: 1%;
     width: 100%;
 }
-
-
 
 div.links {
     width:  100%;
@@ -97,12 +125,12 @@ div.links {
 
 .links i {
     font-size: 4em;
-    color: white;
+    color:#F8F8FF;
     
 }
 
 .copyrights {
-    color: grey;
+    color: #F8F8FF;
     text-align: center;
 }
 

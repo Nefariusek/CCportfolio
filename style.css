@@ -7,6 +7,7 @@
     font-family: 'McLaren';
     src: url(./fonts/McLaren/McLaren-Regular.ttf)
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -61,17 +62,30 @@ p{
     background-color: #F8F8FF;
     width: 100%;
 }
+
+.aboutme {
+    max-width: 50%;
+    position: relative;
+}
+
+.aboutme p{
+    font-size: 1.5em;
+}
+
 .flex-content-aboutme{
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     align-content: space-around;
     justify-content: space-evenly;
+    min-height: 100vh;
 }
 
-.aboutme {
-    position: relative;
-    text-align: center;
+ul.skills{
+    font-family: 'McLaren';
+    font-size: 1.5em;
+    list-style: square;
+    margin-top: 0.1em;
 }
 
 .flex-content-hobby{
@@ -88,24 +102,31 @@ p{
 }
 
 #myphoto img{
-    
-    width: 100%;
+    width: 80%;
     object-fit: cover;
-    max-width: 500px;
+    max-width: 800px;
     min-width: 200px;
 }
 
+.hobby .image{
+    margin:30px 10px;
+}
+
+.hobby .image img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
 .hobby .image img{
     width: 100%;
     object-fit: cover;
     max-width: 700px;
     min-width: 100px;
-
 }
 
 .desc{
     font-size: 1.5em;
 }
+
 
 footer {
     background-color: #242424;

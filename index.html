@@ -7,26 +7,40 @@
     <title>Wizytówka - I projekt CodersCamp</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/d071ab9ea7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" scr="scripts.js"></script>
 </head>
-<body>
-    <div class="mybackground"> </div>
+<body onload="count()">
+    <div class="mybackground"></div>
     <div id="banner">
         <div class = "welcometext">
-            <p>
-                <h1>A może by tak rzucić wszystko i wyjechać do ZONY</h1>
-            </p>
+        <p>
+        <h1>A może by tak rzucić wszystko i wyjechać do ZONY</h1>
+        </p> 
         </div>
     </div>
     <div class="wrapper">
         <section>
+            
             <div class="flex-content-aboutme">
                 <div id="myphoto" class="aboutme">
-                    <img src="img/myphoto.png" alt="Zdjęcie autora">
+                    <img src="img/myphoto.jpg" alt="Zdjęcie autora">
                 </div>
                 <div id="informationsboutme" class="aboutme">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2>Kilka słów o mnie</h2>
+                    <p>Jestem Szymon. Mam 21 lat. Studiuję Informatykę na Wydziale Elektroniki Politechniki Wrocławskiej.</p>
+                    <h2>Umiejętności:</h2>
+                    <ul class="skills">
+                        <li>C#, C++, Java, HTML, CSS, Oracle SQL, Assembler</li>
+                        <li>Systemy kontroli wersji: SVN, GIT</li>
+                        <li>Język angielski: C1 (CAE)</li>
+                        <li>Podstawowe zagadnienia sieciowe (certyfikat CCNA1)</li>
+                        <li>Systemy operacyjne: Windows, Linux</li>
+                        <li>Pakiet MS Office, LaTeX</li>
+                    <ul>
                 </div>
             </div>
+
+
             <h2>A w wolnych chwilach...</h2>
             <div class="flex-content-hobby">
                 <div id="yerba" class="hobby">
@@ -58,19 +72,20 @@
                         <img src="img/books.jpg" alt="Książka">
                     </div>
                     <div class="imagedesc">
-                        <p class="desc">Przerzucam kartki w poszukiwaniu obrazków.</p>
+                        <p class="desc">Przerzucam fantastyczne kartki w poszukiwaniu obrazków.</p>
                     </div>
                 </div>
             </div>
         </section>
         <footer>
             <div class="links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100002288440599&ref=bookmarks"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Nefariusek"><i class="fab fa-github-square"></i></a>
+                <a href="https://steamcommunity.com/id/nefarsky/"><i class="fab fa-steam-square"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="copyrights">
-                <p>&copy; All rights reserved.</p>
+                <p>&copy; Created by Szymon Pakuła. All rights reserved.</p>
             </div>
         </footer>
     </div>

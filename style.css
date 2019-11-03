@@ -166,7 +166,7 @@ div.links {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .flex-content-aboutme{
         flex-direction: column;
     }
@@ -179,4 +179,7 @@ div.links {
         margin-top: 10px;
     }
 
+    .aboutme {
+        max-width: 80%;
+    }
 }

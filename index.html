@@ -7,14 +7,36 @@
     <title>Wizytówka - I projekt CodersCamp</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/d071ab9ea7.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" scr="scripts.js"></script>
+    <!--<script scr="scripts.js" type="text/javascript" ></script>-->
+
+    <script type="text/javascript">
+    function countStart() {
+        var today = new Date();
+        var hours = today.getHours();
+        var minutes = today.getMinutes();
+        var seconds = today.getSeconds();
+        minutes = checkTime(minutes);
+        seconds = checkTime(seconds);
+        document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+
+        time = setTimeout("countStart()", 1000);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i}; 
+        return i;
+    }
+    
+    
+    </script>
 </head>
-<body onload="count()">
+<body onload="countStart()">
     <div class="mybackground"></div>
     <div id="banner">
         <div class = "welcometext">
         <p>
-        <h1>A może by tak rzucić wszystko i wyjechać do ZONY</h1>
+        <h1><div id="clock"></div></h1>
+        <h1>idealny moment by rzucić wszystko i wyjechać do ZONY</h1>
         </p> 
         </div>
     </div>
@@ -79,9 +101,9 @@
         </section>
         <footer>
             <div class="links">
-                <a href="https://www.facebook.com/profile.php?id=100002288440599&ref=bookmarks"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://github.com/Nefariusek"><i class="fab fa-github-square"></i></a>
-                <a href="https://steamcommunity.com/id/nefarsky/"><i class="fab fa-steam-square"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100002288440599&ref=bookmarks"  target="_blank" ><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Nefariusek"  target="_blank" ><i class="fab fa-github-square"></i></a>
+                <a href="https://steamcommunity.com/id/nefarsky/"  target="_blank"  ><i class="fab fa-steam-square"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="copyrights">

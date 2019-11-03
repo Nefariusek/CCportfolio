@@ -1,14 +1,13 @@
-function count() {
+function countStart() {
     var today = new Date();
     var hours = today.getHours();
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
-    mminutes = checkTime(minutes);
+    minutes = checkTime(minutes);
     seconds = checkTime(seconds);
-    document.getElementById("clock").innerHTML =
-    hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
 
-    setTimeout("count();", 1000);
+    time = setTimeout("countStart()", 1000);
   }
 
   function checkTime(i) {
